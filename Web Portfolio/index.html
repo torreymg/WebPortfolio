@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Torrey Gonzales</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <style>
+.main-head {
+  grid-area: header;
+}
+.content {
+  grid-area: content;
+}
+.main-nav {
+  grid-area: nav;
+}
+.side {
+  grid-area: sidebar;
+}
+.ad {
+  grid-area: ad;
+}
+.main-footer {
+  grid-area: footer;
+  text-align:center;
+}
+.layout {
+  display: grid;
+  grid-gap: 20px; 
+grid-template-columns: 1fr 3fr; 
+grid-template-areas: 
+"header header" 
+"nav nav" 
+"sidebar content" 
+"footer footer";
+} 
+img{
+  width: 300px;
+  padding-left:25px;
+}
+body{
+  background-image:url(background.jpg);
+  background-size: cover;
+}
+.main-nav a{
+  color:rgb(126, 64, 53);
+  float: right;
+  text-decoration: none;
+  padding-right: 10px;
+  font-weight: 900;
+}
+.main-nav a:hover{
+text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <header class="main-head"></header>
+
+    <nav class="main-nav">
+        <ul>
+            <a href="resume.html">Resume</a>
+            <a href="course.html">Course Work</a>
+            <a href="contact.html">Contact Me</a>
+    </nav>
+    
+    <main class="content">
+        <h1>Torrey M Gonzales</h1>
+        <h2>Information Systems Major<br>
+          University of Colorado Denver
+        </h2>
+        
+        <p><a style= "color:black"mailto:torrey.gonzales@ucdenver.edu" target="_blank">torrey.gonzales@ucdenver.edu</a></p>
+   </main> 
+    <aside class="side"><img id="profile" src="mee.jpg" alt="torrey"></aside>
+    <footer class="main-footer">Copyright 2022 by Torrey Gonzales</footer>
+</div>
+</body>
+</html>

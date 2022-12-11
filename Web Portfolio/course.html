@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Torrey Gonzales</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <style>
+.main-head {
+ grid-area: header;
+}
+.content {
+ grid-area: content;
+}
+.main-nav {
+ grid-area: nav;
+}
+.side {
+ grid-area: sidebar;
+}
+.ad {
+ grid-area: ad;
+}
+.main-footer {
+ grid-area: footer;
+ text-align:center;
+}
+.layout {
+ display: grid;
+ grid-gap: 20px;
+grid-template-columns: 1fr 3fr;
+grid-template-areas:
+"header header"
+"nav nav"
+"content content"
+"footer footer";
+}
+img{
+ width: 50px;
+}
+body{
+ background-image:url(background.jpg);
+ background-size: cover;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-nav a{
+ color:rgb(126, 64, 53);
+ float: right;
+ text-decoration: none;
+ padding-right: 10px;
+ font-weight: 900;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-nav a:hover{
+text-decoration: underline;
+}
+table {
+ font-family: arial, sans-serif;
+ border-collapse: collapse;
+ width: 100%;
+ border: solid;
+}
+ 
+td, th {
+ border:
+ text-align: left;
+ padding: 8px;
+}
+th{
+   background-color: rgb(126, 64, 53);
+}
+ 
+tr:nth-child(even) {
+ background-color: rgba(250, 248, 238, 0.943);
+}
+caption{
+   font-size: 30px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+ </style>
+</head>
+<body>
+ <div class="layout">
+   <header class="main-head"></header>
+ 
+   <nav class="main-nav">
+       <ul>
+           <a href="resume.html">Resume</a>
+           <a href="course.html">Course Work</a>
+           <a href="contact.html">Contact Me</a>
+   </nav>
+  
+   <main class="content">
+       <table>
+           <caption> Courses Taken</caption>
+           <tr>
+             <th></th>
+             <th>Course</th>
+             <th>Title</th>
+             <th>Taken</th>
+             <th>Concepts Learned</th>
+           </tr>
+           <tr>
+             <td><img id="excel" src="excelimg.jpeg" alt="excel"></td>
+             <td>ISMG 2050</td>
+             <td>Intro to Business Problem Solving</td>
+             <td>Fall 2022</td>
+             <td>Excel, Tableau</td>
+           </tr>
+           <tr>
+             <td><img id="web" src="webicon.jpeg" alt="webdesign"></td>
+             <td>ISMG 2800</td>
+             <td>Designing for the Web</td>
+             <td>Fall 2022</td>
+             <td>HTML, CSS, JavaScript</td>
+          </tr>
+           <tr>
+             <td><img id="Tech" src="TIB.jpeg" alt="Technology in Business"</td>
+             <td>ISMG 3000</td>
+             <td>Technology in Business</td>
+             <td>Spring 2023</td>
+             <td>Artificial Intelligence, Business Intelligence, Cyber Security, Project Management</td>
+           </tr>
+           <tr>
+             <td><img id="Web" src="IBT.jpeg" alt="Web Icon" </td>
+             <td>ISMG 3600</td>
+             <td>System Strategy, Arch & Design</td>
+             <td>Spring 2023</td>
+             <td>Six-Sigma, Ethics in Design, Evaluating Outsourcing</td>
+           </tr>
+           
+         </table>
+        
+</main>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   <footer class="main-footer">Copyright 2022 by Torrey Gonzales</footer>
+</div>
+</body>
+</html>
